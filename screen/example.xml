@@ -3,6 +3,9 @@
         require-authentication="anonymous-all">
 <widgets>
     <label type="h2" text="My first screen component example!"/>
+    <render-mode>
+        <text type="html,vuet" location="component://myComponent/screen/example.html"/>
+    </render-mode>
 </widgets>
 
 </screen>
