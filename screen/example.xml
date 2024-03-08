@@ -4,7 +4,7 @@
 <widgets>
     <label type="h2" text="My first screen component example!"/>
     <render-mode>
-        <text type="html,vuet" location="component://myComponent/screen/example.html"/>
+        <text type="html,vuet" location="component://myComponent/template/example.html"/>
     </render-mode>
 </widgets>
 
