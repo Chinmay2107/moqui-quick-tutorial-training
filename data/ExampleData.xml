@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-facade-xml type="demo">
+    <example.Subject subjectId="1001" subjectName="Chemistry" description="PCM Subject"/>
+    <example.Subject subjectId="1002" subjectName="Mathematics" description="PCM Subject"/>
+    <example.Subject subjectId="1003" subjectName="Physics" description="PCM Subject"/>
+</entity-facade-xml>

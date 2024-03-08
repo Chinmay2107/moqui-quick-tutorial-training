@@ -7,5 +7,4 @@
         <text type="html,vuet" location="component://myComponent/template/example.html"/>
     </render-mode>
 </widgets>
-
 </screen>
