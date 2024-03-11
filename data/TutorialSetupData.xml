@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-facade-xml type="seed-initial">
+        <moqui.security.ArtifactGroup artifactGroupId="TUTORIAL_APP" description="Tutorial app (by root screen)"/>
+        <moqui.security.ArtifactGroupMember artifactGroupId="TUTORIAL_APP" artifactTypeEnumId="AT_XML_SCREEN" inheritAuthz="Y" artifactName="component://myComponent/screen/example.xml"/>
+        <moqui.security.ArtifactAuthz artifactAuthzId="TUTORIAL_ALL" userGroupId="ALL_USERS" artifactGroupId="TUTORIAL_APP"
+                                      authzTypeEnumId="AUTHZT_ALLOW" authzActionEnumId="AUTHZA_ALL"/>
+</entity-facade-xml>
