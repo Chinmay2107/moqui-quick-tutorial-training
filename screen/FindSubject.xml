@@ -2,7 +2,7 @@
 <screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-3.xsd">
     <transition name="createSubject">
-        <service-call name="create#example.Subject"/>
+        <service-call name="tutorial.SubjectServices.create#Subject"/>
         <default-response url="."/>
     </transition>
     <actions>
@@ -14,7 +14,8 @@
         <container-dialog id="CreateSubjectDialog" button-text="Create Subject">
             <form-single name="CreateSubject" transition="createSubject">
                 <auto-fields-entity entity-name="example.Subject" field-type="edit"/>
-                <field name="submitButton"><default-field title="Create"><submit/></default-field></field>
+                <field name="submitButton"><default-field title="Create"><submit/>
+                </default-field></field>
             </form-single>
         </container-dialog>
         <form-list name="ListSubjects" list="subjectsList" header-dialog="true" skip-form="true">
