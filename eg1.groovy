@@ -6,7 +6,8 @@ def orderJson = ec.context.order
 System.out.println("\n\n\n~~~~~~~~~~~~~~~~~~~"+ec.context.order+"~~~~~~~~~~~~~~~~~~~\n\n\n")
 
 // Parse the JSON into a Map
-def orderMap = new JsonSlurper().parseText(orderJson)
+// def orderMap = new JsonSlurper().parseText(orderJson)
+def orderMap = orderJson
 
 // Modify the "financial_status" and "user_id" fields
 orderMap.financial_status = "partial"
