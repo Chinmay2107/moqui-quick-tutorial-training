@@ -13,10 +13,13 @@ def orderMap = orderJson
 orderMap.financial_status = "partial"
 orderMap.user_id = "abcd"
 
-// Convert the modified Map back to a JSON string
-def modifiedOrderJson = JsonOutput.toJson(orderMap)
 
 // Store the modified JSON in the ec.context map
-ec.context.modifiedOrderJson = modifiedOrderJson
+ec.context.modifiedOrderMap = orderMap
+
+Map<String, Object> resultMap = [:]
+resultMap.put("modifiedOrderMap", orderMap)
+
+return resultMap
 
 System.out.println("\n\n\n~~~~~~~~~~~~~~~~~~~"+ec.context.modifiedOrderJson+"~~~~~~~~~~~~~~~~~~~\n\n\n")
